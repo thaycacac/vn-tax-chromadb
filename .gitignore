@@ -1,0 +1,32 @@
+# Secrets & local env
+.venv/
+.env
+
+# Python cache / build
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+logs/
+*.log
+.DS_Store
+
+# Runtime databases & Chroma
+chroma_data/
+chroma/
+*.sqlite3
+*.ses
+:memory:.ses
+
+# Crawler artifacts (regenerate with: vn-tax crawl)
+data/raw/
+data/processed/*
+!data/processed/.gitkeep

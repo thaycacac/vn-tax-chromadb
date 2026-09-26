@@ -1,0 +1,24 @@
+# Seed documents for the Vietnamese tax law crawler.
+# Prefer Cong Bao (Official Gazette) pages: PDF attachments are text-extractable.
+# Official Van Ban pages often ship scanned image PDFs only.
+
+seeds:
+  - id: luat_tncn_109_2025
+    tax_type: TNCN
+    title: "Law on Personal Income Tax No. 109/2025/QH15"
+    url: "https://congbao.chinhphu.vn/van-ban/luat-so-109-2025-qh15-468671.htm"
+
+  - id: luat_gtgt_48_2024
+    tax_type: GTGT
+    title: "Law on Value-Added Tax No. 48/2024/QH15"
+    url: "https://congbao.chinhphu.vn/van-ban/luat-so-48-2024-qh15-43576.htm"
+
+  - id: luat_tndn_67_2025
+    tax_type: TNDN
+    title: "Law on Corporate Income Tax No. 67/2025/QH15"
+    url: "https://congbao.chinhphu.vn/van-ban/luat-so-67-2025-qh15-45557.htm"
+
+  - id: luat_quan_ly_thue_38_2019
+    tax_type: ADMIN
+    title: "Law on Tax Administration No. 38/2019/QH14"
+    url: "https://congbao.chinhphu.vn/van-ban/luat-so-38-2019-qh14-29256/27297.htm"

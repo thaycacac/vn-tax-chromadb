@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vn-tax-rag"
+version = "0.1.0"
+description = "CLI RAG system for Vietnamese tax law lookup using ChromaDB and local LLMs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "vn-tax-rag contributors" }]
+dependencies = [
+  "chromadb>=1.0.0",
+  "python-dotenv>=1.0.0",
+  "openai>=1.40.0",
+  "typer>=0.12.0",
+  "httpx>=0.27.0",
+  "beautifulsoup4>=4.12.0",
+  "lxml>=5.0.0",
+  "pyyaml>=6.0",
+  "pypdf>=5.0.0",
+  "sentence-transformers>=3.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[project.scripts]
+vn-tax = "vn_tax_rag.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+vn_tax_rag = ["py.typed"]
